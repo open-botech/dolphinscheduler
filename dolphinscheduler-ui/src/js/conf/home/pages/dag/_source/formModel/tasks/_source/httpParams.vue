@@ -205,6 +205,7 @@
     .el-input__inner {
       height: 32px;
       line-height: 32px;
+      ackground-color: transparent;
     }
     .select-listpp {
       margin-bottom: 6px;

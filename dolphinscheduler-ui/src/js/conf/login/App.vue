@@ -150,7 +150,7 @@
   .login-model {
     width: 400px;
     min-height: 260px;
-    background: #fff;
+    background: linear-gradient(360deg,rgba(1,66,102,.8),rgba(0,31,68,.8));
     border-radius: 3px;
     position: fixed;
     left:50%;
