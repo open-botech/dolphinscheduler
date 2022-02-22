@@ -19,9 +19,9 @@
     <div class="text-1">
       <a href="javascript:"></a>
     </div>
-    <div class="form-model">
+    <div class="form-model" >
       <div class="list">
-        <label>{{$t('User Name')}}</label>
+        <label style="color: white">{{$t('User Name')}}</label>
         <div>
           <el-input
                   id="inputUsername"
@@ -37,7 +37,7 @@
         </p>
       </div>
       <div class="list">
-        <label>{{$t('Password')}}</label>
+        <label style="color: white">{{$t('Password')}}</label>
         <div>
           <el-input
                   id="inputPassword"
