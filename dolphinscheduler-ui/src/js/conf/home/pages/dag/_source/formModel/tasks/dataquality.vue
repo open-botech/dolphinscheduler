@@ -41,6 +41,7 @@
           :disabled="isDetails"
           type="input"
           size="small"
+          v-model="businessType"
           placeholder="请输入业务类型">
         </el-input>
       </div>
@@ -55,6 +56,25 @@
           <el-radio :label="'cluster'" :disabled="isDetails"></el-radio>
           <el-radio :label="'client'" :disabled="isDetails"></el-radio>
           <el-radio :label="'local'" :disabled="isDetails"></el-radio>
+        </el-radio-group>
+      </div>
+    </m-list-box>
+    <m-list-box>
+      <div slot="text">标签生成周期</div>
+      <div slot="content">
+        <el-radio-group v-model="tagCycle" size="small">
+          <el-radio label="日" :disabled="isDetails"></el-radio>
+          <el-radio label="月" :disabled="isDetails"></el-radio>
+          <el-radio label="保留最新" :disabled="isDetails"></el-radio>
+        </el-radio-group>
+      </div>
+    </m-list-box>
+    <m-list-box>
+      <div slot="text">标签类型</div>
+      <div slot="content">
+        <el-radio-group v-model="tagType" size="small">
+          <el-radio label="公有" :disabled="isDetails"></el-radio>
+          <el-radio label="私有" :disabled="isDetails"></el-radio>
         </el-radio-group>
       </div>
     </m-list-box>
@@ -152,6 +172,9 @@
     name: 'dataquality',
     data () {
       return {
+        tagType: '',
+        businessType: '',
+        tagCycle: '',
         // Deployment method
         deployMode: 'cluster',
         // Custom function

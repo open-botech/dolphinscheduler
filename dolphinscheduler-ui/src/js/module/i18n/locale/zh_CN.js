@@ -859,7 +859,7 @@ export default {
   src_filter: '源表过滤条件',
   src_field: '源表检测列',
   statistics_name: '实际值名',
-  check_type: '校验方式',
+  check_type: '校验属性分类',
   operator: '校验操作符',
   threshold: '阈值',
   failure_strategy: '失败策略',
