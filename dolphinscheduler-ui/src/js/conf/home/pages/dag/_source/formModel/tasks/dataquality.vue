@@ -34,6 +34,17 @@
         </el-select>
       </div>
     </m-list-box>
+    <m-list-box>
+      <div slot="text">业务类型</div>
+      <div slot="content">
+        <el-input
+          :disabled="isDetails"
+          type="input"
+          size="small"
+          placeholder="请输入业务类型">
+        </el-input>
+      </div>
+    </m-list-box>
     <div class="form-box">
         <form-create v-model="fApi" :rule="rule" :option="option"></form-create>
     </div>

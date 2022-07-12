@@ -26,7 +26,7 @@
           :href="helpUrl(nodeData.taskType)"
         >
           <i class="el-icon-question" />
-          {{ nodeData.taskType }} {{ $t("Instructions") }}</a
+          {{ nodeData.taskType === 'DATA_QUALITY' ? '数据标签' : nodeData.taskType}} {{ $t("Instructions") }}</a
         >
       </span>
       <span class="go-subtask">
